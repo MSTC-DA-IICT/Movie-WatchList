@@ -1,4 +1,6 @@
-# Movies Watchlist 🎞️:
+# Movies Watchlist 🎞️
+
+We all love to watch movies, series, animes and many more things. There are so many movies and series that we often forget some of the best ones. So we are creating a Web-App which does the perfect job of telling yourself the names of the movies you told yourself to watch one day.
 
 This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source contribution. Make the best out of the ongoing Hacktoberfest 2021 by contributing to for-the-community projects. This project participates in Hacktoberest 2021 and all successful PRs made here will be counted among the at least 4 successful pull requests that you'd need to make in order to be eligible for the Hacktoberfest appreciation (plant a tree / get a tee).
 

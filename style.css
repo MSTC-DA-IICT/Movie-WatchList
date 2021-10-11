@@ -1,80 +1,51 @@
-.row{
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url('background.png');
-  
-  background-size: cover;
-  background-repeat: no-repeat
-  ;
-}
-#text1{
-  margin-top: 50px;
-  width: 700px;
-  height: 50px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  border: 2px solid red;
-  border-radius: 5px;
-  
-}
-.input-group-append{
-  margin-top: 50px;
-  height: 50px;
-  margin-left: -10px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  background-color: #000000;
-  border-radius: 20px;
-
-}
-
-.navbar1{
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
- 
-.btn{
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-}
-#row2{
-  margin-top: 50px;
-}
-
-
-.bn3637 {
-  display: inline-flex;
+  background-color: #60ece5;
+  color: #444;
+  font-family: 'Yusei Magic', sans-serif;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.7rem 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  margin-top: 50px;
-  width: 90px;
-  height: 50px;
-  
+  height: 100vh;
+  margin: 0;
+}
 
+h1 {
+  color: rgb(90, 35, 145);
+  font-size: 2rem;
   text-align: center;
-  text-decoration: none;
-  background-color: rgb(235, 39, 39);
-  color: whitesmoke;
-  backface-visibility: hidden;
-  border: 0.3rem solid transparent;
-  border-radius: 3rem;
+  opacity: 0.4;
 }
 
-.bn36 {
-  border-color: #fff;
-  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
 }
 
-.bn36:hover {
-  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+.input {
+  border: none;
+  color: #444;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
 }
+
+.input::placeholder {
+  color: #d5d5d5;
+}
+
+.movies {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+

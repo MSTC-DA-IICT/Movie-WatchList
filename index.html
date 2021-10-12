@@ -28,13 +28,16 @@
             <button type="button" class="btn btn-dark" >Clear All</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-dark" style="margin-left: 1000px;">Dark Mode</button>
+            <button type="button" class="btn btn-dark" style="margin-left: 800px;">Dark Mode</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-dark">Sign In</button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Get List</button>
           </li>
           <li class="nav-item">
             <button type="button" class="btn btn-dark">Share</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-dark"   >Contact Us</button>
           </li>
         </ul>
       </div>
@@ -67,6 +70,54 @@
       <button type="button" class="bn3637 bn36 ">Add</button>
     </div>
   </div>
+
+
+
+
+  <!-- Modal Start -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p id="get">
+      <strong>Hope you enjoyed our services.</strong> <br><br>In order to get your watchlist <br> <br> Please enter your email</p>
+
+
+          <div class="row">
+            <div class="col">
+        <input  id="get1"type="text" >
+                </div>
+                <div class="col">
+                  <button type="button" onclick="toast()" style="margin-top: 75px;"  class="bn3637 bn36 ">Send</button>
+                 
+                </div>
+        </div>
+
+        <!-- Toast Message 1-->
+        <div id="snackbar">Email Sent..</div>
+        <script>
+          function toast() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+          }
+          </script>
+        <!-- Toast Message End1 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal End -->
 
   
   

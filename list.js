@@ -41,3 +41,8 @@ function showList() {
         document.getElementById('my-movie-list').appendChild(div);
     });
 }
+//deletes the list as well as empties the list array.
+function clearAll(){
+    movieList.length = 0;
+    deleteList();
+}

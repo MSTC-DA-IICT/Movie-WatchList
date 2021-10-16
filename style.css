@@ -6,6 +6,7 @@ body {
   background-image: url('background.png');
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 
 #text1 {
@@ -15,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  border: 2px solid red;
+  border: 2px solid wheat;
   border-radius: 5px;
 }
 
@@ -34,6 +35,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
 
 .btn {
   font-family: "Poppins", sans-serif;
@@ -72,6 +74,19 @@ body {
 
 .bn36:hover {
   transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+.movie-list{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.movie-list-item{
+  background-color: #ffffff8c;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
 }
 
 
@@ -145,17 +160,6 @@ body {
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
-  
-.movie-list{
-  margin-top: 5rem;
-  margin-bottom: 2rem;
 }
-.movie-list-item{
-  background-color: #ffffff8c;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(10px);
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.1rem;
-}
+
+

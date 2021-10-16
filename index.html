@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -18,11 +20,9 @@
 </head>
 
 
-  
-  <body>
-    <div class="navbar1">
+<body>
+  <div class="navbar1">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
       <a class="navbar-brand" href="#">My Watchlist</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,52 +31,41 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-
-        
             <button type="button" class="btn btn-dark" onclick="clearAll()">Clear All</button>
-
           </li>
-         
-          <li class="nav-item" >
+          <li class="nav-item">
             <button type="button" class="btn btn-dark">Dark Mode</button>
           </li>
-          
           <li class="nav-item">
             <button type="button" class="btn btn-dark">Sign In</button>
           </li>
-          <li class="nav-item">
+             <li class="nav-item">
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Get List</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-dark">Share</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-dark">Contact Us</button>
           </li>
         </ul>
       </div>
     </nav>
   </div>
 
+  <div class="container">
+    <div class="row">
 
-<div class="container">
-  <div class="row">
-   
-    <div class="col">
-      <div class="input-group-append1 mb-1">
-        <input  id="text1"type="text" placeholder="  Enter Your Favourite Shows Here" >
-      
+      <div class="col">
+
+        <input id="text1" type="text" placeholder="   Enter Your Favourite Shows Here">
+
+
       </div>
-    </div>
-    <div class="col">
-      <div class="input-group-append mb-3">
-        <button class="btn  dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Select Your Category</button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Movies</a>
-          <a class="dropdown-item" href="#">Anime</a>
-          <a class="dropdown-item" href="#">Cartoon</a>
-          <a class="dropdown-item" href="#">TV Shows</a>
-
+      <div class="col">
+        <div class="input-group-append mb-3">
+          <button class="btn  dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true">Select Your Category</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Movies</a>
+            <a class="dropdown-item" href="#">Anime</a>
+            <a class="dropdown-item" href="#">Cartoon</a>
+            <a class="dropdown-item" href="#">TV Shows</a>
+          </div>
         </div>
       </div>
 
@@ -90,25 +79,8 @@
   <div class="movie-list container" id = "my-movie-list">
     
   </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-    <script src="list.js"></script>
-</body>
 
-
-
-
-
-  <!-- Modal Start -->
+<!-- Modal1 Start -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -151,23 +123,20 @@
   </div>
 </div> 
 
-<!-- Modal End -->
+<!-- Modal1 End -->
 
-  
-  
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="list.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-=======
-</html>
-

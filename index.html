@@ -110,10 +110,15 @@
         <div id="snackbar">Email Sent..</div>
         <script>
           function toast() {
+            var mailTextbox=document.getElementById("get1");
+            if(get1.value==""){
+              alert("Enter a Email Id");
+            }else{
             var x = document.getElementById("snackbar");
             x.className = "show";
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
           }
+        }
           </script>
         <!-- Toast Message End1 -->
       </div>

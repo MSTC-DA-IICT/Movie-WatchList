@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -20,25 +22,25 @@
 
 <body>
   <div class="navbar1">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="#">My Watchlist</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <button type="button" class="btn btn-dark" onclick="clearAll()">Clear All</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-dark" style="margin-left: 1000px;">Dark Mode</button>
+            <button type="button" class="btn btn-dark">Dark Mode</button>
           </li>
           <li class="nav-item">
             <button type="button" class="btn btn-dark">Sign In</button>
           </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-dark">Share</button>
+             <li class="nav-item">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Get List</button>
           </li>
         </ul>
       </div>
@@ -77,6 +79,52 @@
   <div class="movie-list container" id = "my-movie-list">
     
   </div>
+
+<!-- Modal1 Start -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p id="get">
+      <strong>Hope you enjoyed our services.</strong> <br><br>In order to get your watchlist <br> <br> Please enter your email</p>
+
+
+          <div class="row">
+            <div class="col">
+        <input  id="get1"type="text" >
+                </div>
+                <div class="col">
+                  <button type="button" onclick="toast()" style="margin-top: 75px;"  class="bn3637 bn36 ">Send</button>
+                 
+                </div>
+        </div>
+
+        <!-- Toast Message 1-->
+        <div id="snackbar">Email Sent..</div>
+        <script>
+          function toast() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+          }
+          </script>
+        <!-- Toast Message End1 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal1 End -->
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

@@ -1,0 +1,120 @@
+* {
+  background-color: black;
+}
+
+.leftside,
+.rightside {
+  width: 100%;
+}
+
+.left-text {
+  font-size: 60px;
+  margin-top: 35%;
+  text-align: center;
+}
+
+.right-text {
+  font-size: 19px;
+  text-align: center;
+}
+
+div.form {
+  display: block;
+  text-align: center;
+}
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23%;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  text-align: center;
+  border: none;
+  border-bottom: whitesmoke 0.5px solid;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  width: 10px;
+}
+
+input:focus {
+  color: #ff008c;
+  background-color: black;
+  text-decoration: none;
+}
+
+::placeholder {
+  color: whitesmoke;
+
+  font-size: 19px;
+  opacity: 0.7;
+}
+
+.submit-button {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.vertical-line {
+  margin-top: 200px;
+  border-left: 6px solid #ff008c;
+  height: 500px;
+}
+
+.sign-up {
+  margin-bottom: 30px;
+  color: #ff008c;
+  font-size: 35px;
+}
+
+.btn-outline-primary {
+  width: 50%;
+  color: #ff008c;
+  background-color: black;
+  background-image: none;
+  border-width: 0.5px;
+  border-color: #ff008c;
+}
+
+.btn-outline-primary:hover {
+  color: #ff008c;
+  transition: 1.5s;
+  background-color: black;
+  border-color: black;
+  box-shadow: 0 0px 0px 0 #ff008c, 0 0 40px 0 #ff008c;
+}
+
+.sign-in-text {
+  font-size: 50px;
+  width: 40%;
+  color: #ff008c;
+  background-color: black;
+  background-image: none;
+  border-width: 0px;
+  border-color: #ff008c;
+}
+
+.sign-in-text:hover {
+  color: #ff008c;
+  transition: 1.5s;
+  background-color: black;
+  border-color: black;
+  box-shadow: 0 0px 0px 0 #ff008c, 0 0 10px 0 #ff008c;
+}
+a {
+  color: #ff008c;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 1s;
+  color: #ff80c6;
+}

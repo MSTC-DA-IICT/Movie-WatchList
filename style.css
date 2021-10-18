@@ -39,6 +39,11 @@ body {
     font-weight: 700;
 }
 
+.navbar-brand:hover {
+    color: rgb(1, 1, 29) !important;
+    text-shadow: 0 1px white !important;
+}
+
 .btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -188,17 +193,17 @@ body {
 .darkmode #text1,
 .darkmode .modal-content,
 .darkmode .close,
-.darkmode #get {
-    background-color: #111111;
+.darkmode #get,
+.darkmode .navbar {
+    background-color: #111111 !important;
     color: white;
 }
-
 .darkmode .modal {
     background-color: rgb(68, 68, 68, 0.5);
 }
 
 .darkmode .dropdown-item:hover {
-    background-color: #474747;
+    background-color: #474747 !important;
 }
 
 .darkmode .movie-list-item {

@@ -33,8 +33,13 @@
 
     <body>
         <div class="navbar1">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">My Watchlist</a>
+            <nav class="navbar navbar-expand-md bg-secondary">
+                <a
+                    class="navbar-brand text-white"
+                    style="text-shadow: 0 3px black; transition: all 0.2s ease"
+                    href="/"
+                    >My Watchlist</a
+                >
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -48,16 +53,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <button
-                                type="button"
-                                class="btn btn-dark"
-                                onclick="clearAll()"
+                        <li class="nav-item m-1">
+                            <a href="sign-in.html"
+                                ><button type="button" class="btn btn-dark">
+                                    Sign In
+                                </button></a
                             >
-                                Clear All
-                            </button>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item m-1">
                             <button
                                 type="button"
                                 class="btn btn-dark"
@@ -66,14 +69,7 @@
                                 Dark Mode
                             </button>
                         </li>
-                        <li class="nav-item">
-                            <a href="sign-in.html"
-                                ><button type="button" class="btn btn-dark">
-                                    Sign In
-                                </button></a
-                            >
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item m-1">
                             <button
                                 type="button"
                                 class="btn btn-dark"
@@ -81,6 +77,15 @@
                                 data-target="#exampleModalCenter"
                             >
                                 Get List
+                            </button>
+                        </li>
+                        <li class="nav-item active m-1">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                onclick="clearAll()"
+                            >
+                                Clear All
                             </button>
                         </li>
                     </ul>

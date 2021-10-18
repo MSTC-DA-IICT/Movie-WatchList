@@ -15,12 +15,12 @@ body {
 #text1 {
     margin-top: 50px;
     width: 700px;
-    height: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 18px;
     border: 2px solid wheat;
     border-radius: 5px;
+    padding: 1em;
 }
 
 .input-group-append {
@@ -182,23 +182,27 @@ body {
     }
 }
 
-.darkmode {
-    filter: grayscale(100%);
-}
-
 .darkmode .dropdown-toggle,
 .darkmode .dropdown-item,
-.darkmode .dropdown-menu {
-    background-color: #123712;
+.darkmode .dropdown-menu,
+.darkmode #text1,
+.darkmode .modal-content,
+.darkmode .close,
+.darkmode #get {
+    background-color: #111111;
     color: white;
 }
 
+.darkmode .modal {
+    background-color: rgb(68, 68, 68, 0.5);
+}
+
 .darkmode .dropdown-item:hover {
-    background-color: #353835;
+    background-color: #474747;
 }
 
 .darkmode .movie-list-item {
-    background-color: #331;
+    background-color: #111111;
     color: white;
     font-weight: 800;
     border: 2px solid black;
@@ -206,5 +210,5 @@ body {
 }
 
 .darkmode .bn36 {
-    background-color: #333;
+    background-color: #111111;
 }

@@ -1,165 +1,219 @@
 .row {
-  justify-content: center;
+    justify-content: center;
+}
+
+* {
+    transition: background-color 0.5s ease;
 }
 
 body {
-  background-image: url('background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #text1 {
-  margin-top: 50px;
-  width: 700px;
-  height: 50px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  border: 2px solid wheat;
-  border-radius: 5px;
+    margin-top: 50px;
+    width: 700px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 .input-group-append {
-  margin-top: 50px;
-  height: 50px;
-  margin-left: -10px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  border-radius: 20px;
+    margin-top: 50px;
+    height: 50px;
+    margin-left: -10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 20px;
 }
 
 .navbar1 {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
+.navbar-brand:hover {
+    color: rgb(1, 1, 29) !important;
+    text-shadow: 0 1px white !important;
+}
 
 .btn {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 #row2 {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .bn3637 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7rem 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  margin-top: 50px;
-  width: 90px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(235, 39, 39);
-  color: whitesmoke;
-  backface-visibility: hidden;
-  border: 0.3rem solid transparent;
-  border-radius: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 50px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(235, 39, 39);
+    color: whitesmoke;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
 }
 
 .bn36 {
-  border-color: #fff;
-  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    border-color: #fff;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
 }
 
 .bn36:hover {
-  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
 }
-.movie-list{
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+.movie-list {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
-.movie-list-item{
-  background-color: #ffffff8c;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(10px);
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.1rem;
-}
-
-
-#get{
-  width : 300px;
-  height: 50px;
-  font-family: "Comic Sans MS", sans-serif;
-  font-weight: 700;
-  font-size: 19px;
-  line-break:strict;
-  text-align: center;
-  color: dimgray;
+.movie-list-item {
+    background-color: #ffffff8c;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
 }
 
-#get1{
-  
-  
-  margin-top: 75px;
-  width : 300px;
-  height: 50px;
-  font-family: "Comic Sans MS";
-  font-weight: 700;
-  font-size: 18px;
-  margin-left: 20px;
-  border: 2px solid red;
-  border-radius: 5px;
+#get {
+    width: 300px;
+    height: 50px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-break: strict;
+    text-align: center;
+    color: dimgray;
 }
 
-
-
+#get1 {
+    margin-top: 75px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Comic Sans MS';
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
 
 /* Toast Message */
 
 #snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 17px;
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
 }
 
 #snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
+.darkmode .dropdown-toggle,
+.darkmode .dropdown-item,
+.darkmode .dropdown-menu,
+.darkmode #text1,
+.darkmode .modal-content,
+.darkmode .close,
+.darkmode #get,
+.darkmode .navbar {
+    background-color: #111111 !important;
+    color: white;
+}
+.darkmode .modal {
+    background-color: rgb(68, 68, 68, 0.5);
+}
 
+.darkmode .dropdown-item:hover {
+    background-color: #474747 !important;
+}
+
+.darkmode .movie-list-item {
+    background-color: #111111;
+    color: white;
+    font-weight: 800;
+    border: 2px solid black;
+    box-sizing: content-box;
+}
+
+.darkmode .bn36 {
+    background-color: #111111;
+}

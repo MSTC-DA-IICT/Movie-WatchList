@@ -82,6 +82,16 @@
                         <li class="nav-item active m-1">
                             <button
                                 type="button"
+                                class="btn btn-dark"
+                                data-toggle="modal"
+                                data-target="#contact"
+                            >
+                                Contact Us
+                            </button>
+                        </li>
+                        <li class="nav-item active m-1">
+                            <button
+                                type="button"
                                 class="btn btn-danger"
                                 onclick="clearAll()"
                             >
@@ -213,6 +223,52 @@
 
         <!-- Modal1 End -->
 
+
+        <!-- Modal 2 Start -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+          <form class="form my-3 mr-2 ml-2">
+            <div class="form-row">
+                <div class="form-group col-sm"> <label for="exampleInputEmail1" style="color: #fff;">Enter Name</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First"> </div>
+                <div class="form-group col-sm"> <label class="sm-lbl" for="exampleInputEmail1" style="color:rgba(0, 0, 0, 0); visibility: hidden;">Enter Name</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last"> </div>
+            </div>
+            <div class="form-group"> <label for="exampleInputEmail1" style="color: #fff;">Enter Email</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""> </div>
+            <div class="form-group"> <label for="exampleFormControlTextarea1" style="color: #fff;">Your Query</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea> </div>
+        </form>
+          
+        </div>
+        <div class="modal-footer"> <button type="button" onclick="toast1()" class="btn btn-outline-light ml-sm-2" style="border-radius: 50px; width:100%;" data-dismiss="modal" aria-label="Close">Submit</button> </div>
+        <div class="modal-footer">
+          <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+   <!-- Toast Message 2-->
+   <div id="snackbar1">Thanks For your Enquiry <br> We will get back to you soon...</div>
+   <script>
+     function toast1() {
+       var x = document.getElementById("snackbar1");
+       x.className = "show";
+       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+     }
+     </script>
+   <!-- Toast Message End2 -->
+  
+  <!-- Modal 2 End -->
+        <div class="footer-bottom">
+            &copy; www.mywatchlist.com | A Place to Share
+          </div> 
+        
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script

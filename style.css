@@ -22,6 +22,16 @@ body {
     border-radius: 5px;
     padding: 1em;
 }
+#description {
+    margin-top: 50px;
+    width: 700px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    padding: 1em;
+}
 
 .input-group-append {
     margin-top: 50px;
